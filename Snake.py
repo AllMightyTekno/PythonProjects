@@ -37,7 +37,7 @@ def show_score(choice, color, font, size):
     score_rect = score_surface.get_rect()
     screen.blit(score_surface, score_rect)
 
-# Function to handle game over
+# This function runs whenever the game is ended or the snake dies
 def Game_Over():
     my_font = pygame.font.SysFont('times new roman', 50)
     game_over_surface = my_font.render('Your Score is : ' + str(score), True, "Red")
@@ -49,7 +49,7 @@ def Game_Over():
     pygame.quit()
     quit()
 
-# Main game loop
+#While the game runs
 while running:
     screen.fill("purple")
 
